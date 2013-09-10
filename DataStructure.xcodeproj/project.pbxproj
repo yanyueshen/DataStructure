@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4912EC4817D47F5000A5131B /* QuickSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4912EC4717D47F4F00A5131B /* QuickSortView.m */; };
+		4912EC4B17D47F6100A5131B /* QuickSortAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4912EC4A17D47F6100A5131B /* QuickSortAnimationView.m */; };
+		4912EC4E17D574D500A5131B /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4912EC4D17D574D500A5131B /* MenuItem.m */; };
+		4912EC5417D58A0600A5131B /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4912EC5317D58A0600A5131B /* MenuButton.m */; };
+		491CE5B617C46A20000C644E /* CodeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5B517C46A20000C644E /* CodeAnimation.m */; };
+		491CE5B917C48503000C644E /* DataAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5B817C48503000C644E /* DataAnimation.m */; };
+		491CE5BC17C48F9F000C644E /* HanoiAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5BB17C48F9F000C644E /* HanoiAnimationView.m */; };
+		491CE5BF17C4A8AD000C644E /* BubbleSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5BE17C4A8AC000C644E /* BubbleSortView.m */; };
+		491CE5C217C4B055000C644E /* BubbleSortAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5C117C4B055000C644E /* BubbleSortAnimationView.m */; };
+		491CE5C517C5AE09000C644E /* BasicAlgorithmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5C417C5AE09000C644E /* BasicAlgorithmView.m */; };
+		491CE5CB17C8E518000C644E /* InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5CA17C8E518000C644E /* InsertionSort.m */; };
+		491CE5CE17C8EC5D000C644E /* InsertionSortAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5CD17C8EC5D000C644E /* InsertionSortAnimationView.m */; };
+		4925454A17DEEC9800074359 /* GraphVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925454917DEEC9800074359 /* GraphVertex.m */; };
+		49320A3017C35CA600E96911 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A2F17C35CA600E96911 /* UIKit.framework */; };
+		49320A3217C35CA600E96911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A3117C35CA600E96911 /* Foundation.framework */; };
+		49320A3417C35CA600E96911 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A3317C35CA600E96911 /* CoreGraphics.framework */; };
+		49320A3A17C35CA600E96911 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49320A3817C35CA600E96911 /* InfoPlist.strings */; };
+		49320A3C17C35CA600E96911 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49320A3B17C35CA600E96911 /* main.m */; };
+		49320A4017C35CA600E96911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49320A3F17C35CA600E96911 /* AppDelegate.m */; };
+		49320A4217C35CA600E96911 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49320A4117C35CA600E96911 /* Default.png */; };
+		49320A4417C35CA600E96911 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49320A4317C35CA600E96911 /* Default@2x.png */; };
+		49320A4617C35CA600E96911 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49320A4517C35CA600E96911 /* Default-568h@2x.png */; };
+		49320A4917C35CA600E96911 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49320A4817C35CA600E96911 /* ViewController.m */; };
+		49320A4C17C35CA600E96911 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49320A4A17C35CA600E96911 /* ViewController.xib */; };
+		49320A5817C3A97500E96911 /* Hanoi.m in Sources */ = {isa = PBXBuildFile; fileRef = 49320A5717C3A97500E96911 /* Hanoi.m */; };
+		49320A5A17C3B81900E96911 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A5917C3B81900E96911 /* QuartzCore.framework */; };
+		494305A717DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305A317DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m */; };
+		494305A817DD9DD30004EBD8 /* GraphVertexSetterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305A417DD9DD30004EBD8 /* GraphVertexSetterFactory.m */; };
+		494305AB17DD9F330004EBD8 /* GraphMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305AA17DD9F330004EBD8 /* GraphMatrixView.m */; };
+		494305AE17DDA2D30004EBD8 /* IllustrateUndirectGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305AD17DDA2D30004EBD8 /* IllustrateUndirectGraphView.m */; };
+		494305B117DDA9200004EBD8 /* GraphAnimatonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305B017DDA9200004EBD8 /* GraphAnimatonView.m */; };
+		495B44A317D71B2400F88D39 /* menudata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 495B44A217D71B2400F88D39 /* menudata.plist */; };
+		4974A56D17D1799B00A8D750 /* BasicSortAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4974A56C17D1799B00A8D750 /* BasicSortAnimationView.m */; };
+		49D3144217D08B2E00993FA4 /* AlgorithmLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D3144117D08B2E00993FA4 /* AlgorithmLogView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4912EC4617D47F4F00A5131B /* QuickSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuickSortView.h; path = DataStructure/algorithms/Sorts/QuickSortView.h; sourceTree = "<group>"; };
+		4912EC4717D47F4F00A5131B /* QuickSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuickSortView.m; path = DataStructure/algorithms/Sorts/QuickSortView.m; sourceTree = "<group>"; };
+		4912EC4917D47F6000A5131B /* QuickSortAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuickSortAnimationView.h; path = DataStructure/algorithms/Sorts/QuickSortAnimationView.h; sourceTree = "<group>"; };
+		4912EC4A17D47F6100A5131B /* QuickSortAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuickSortAnimationView.m; path = DataStructure/algorithms/Sorts/QuickSortAnimationView.m; sourceTree = "<group>"; };
+		4912EC4C17D574D500A5131B /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuItem.h; path = DataStructure/MenuItem.h; sourceTree = "<group>"; };
+		4912EC4D17D574D500A5131B /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuItem.m; path = DataStructure/MenuItem.m; sourceTree = "<group>"; };
+		4912EC5217D58A0500A5131B /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuButton.h; path = DataStructure/MenuButton.h; sourceTree = "<group>"; };
+		4912EC5317D58A0600A5131B /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuButton.m; path = DataStructure/MenuButton.m; sourceTree = "<group>"; };
+		491CE5B417C46A20000C644E /* CodeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeAnimation.h; sourceTree = "<group>"; };
+		491CE5B517C46A20000C644E /* CodeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeAnimation.m; sourceTree = "<group>"; };
+		491CE5B717C48503000C644E /* DataAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAnimation.h; sourceTree = "<group>"; };
+		491CE5B817C48503000C644E /* DataAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAnimation.m; sourceTree = "<group>"; };
+		491CE5BA17C48F9F000C644E /* HanoiAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HanoiAnimationView.h; path = DataStructure/algorithms/Demo/HanoiAnimationView.h; sourceTree = "<group>"; };
+		491CE5BB17C48F9F000C644E /* HanoiAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HanoiAnimationView.m; path = DataStructure/algorithms/Demo/HanoiAnimationView.m; sourceTree = "<group>"; };
+		491CE5BD17C4A8AC000C644E /* BubbleSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BubbleSortView.h; path = DataStructure/algorithms/Demo/BubbleSortView.h; sourceTree = "<group>"; };
+		491CE5BE17C4A8AC000C644E /* BubbleSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BubbleSortView.m; path = DataStructure/algorithms/Demo/BubbleSortView.m; sourceTree = "<group>"; };
+		491CE5C017C4B055000C644E /* BubbleSortAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BubbleSortAnimationView.h; path = DataStructure/algorithms/Demo/BubbleSortAnimationView.h; sourceTree = "<group>"; };
+		491CE5C117C4B055000C644E /* BubbleSortAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BubbleSortAnimationView.m; path = DataStructure/algorithms/Demo/BubbleSortAnimationView.m; sourceTree = "<group>"; };
+		491CE5C317C5AE09000C644E /* BasicAlgorithmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicAlgorithmView.h; path = DataStructure/BasicAlgorithmView.h; sourceTree = "<group>"; };
+		491CE5C417C5AE09000C644E /* BasicAlgorithmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicAlgorithmView.m; path = DataStructure/BasicAlgorithmView.m; sourceTree = "<group>"; };
+		491CE5C917C8E518000C644E /* InsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InsertionSort.h; path = DataStructure/algorithms/Sorts/InsertionSort.h; sourceTree = "<group>"; };
+		491CE5CA17C8E518000C644E /* InsertionSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InsertionSort.m; path = DataStructure/algorithms/Sorts/InsertionSort.m; sourceTree = "<group>"; };
+		491CE5CC17C8EC5D000C644E /* InsertionSortAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InsertionSortAnimationView.h; path = DataStructure/algorithms/Sorts/InsertionSortAnimationView.h; sourceTree = "<group>"; };
+		491CE5CD17C8EC5D000C644E /* InsertionSortAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InsertionSortAnimationView.m; path = DataStructure/algorithms/Sorts/InsertionSortAnimationView.m; sourceTree = "<group>"; };
+		4925454817DEEC9800074359 /* GraphVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphVertex.h; path = DataStructure/algorithms/Graph/GraphVertex.h; sourceTree = "<group>"; };
+		4925454917DEEC9800074359 /* GraphVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphVertex.m; path = DataStructure/algorithms/Graph/GraphVertex.m; sourceTree = "<group>"; };
+		49320A2C17C35CA600E96911 /* DataStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49320A2F17C35CA600E96911 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49320A3117C35CA600E96911 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49320A3317C35CA600E96911 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49320A3717C35CA600E96911 /* DataStructure-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataStructure-Info.plist"; sourceTree = "<group>"; };
+		49320A3917C35CA600E96911 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49320A3B17C35CA600E96911 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49320A3D17C35CA600E96911 /* DataStructure-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStructure-Prefix.pch"; sourceTree = "<group>"; };
+		49320A3E17C35CA600E96911 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49320A3F17C35CA600E96911 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49320A4117C35CA600E96911 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		49320A4317C35CA600E96911 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		49320A4517C35CA600E96911 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		49320A4717C35CA600E96911 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49320A4817C35CA600E96911 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49320A4B17C35CA600E96911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		49320A5617C3A97500E96911 /* Hanoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hanoi.h; path = DataStructure/algorithms/Demo/Hanoi.h; sourceTree = "<group>"; };
+		49320A5717C3A97500E96911 /* Hanoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hanoi.m; path = DataStructure/algorithms/Demo/Hanoi.m; sourceTree = "<group>"; };
+		49320A5917C3B81900E96911 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		494305A217DD9DD30004EBD8 /* GraphVertexSetterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphVertexSetterFactory.h; path = DataStructure/algorithms/Graph/GraphVertexSetterFactory.h; sourceTree = "<group>"; };
+		494305A317DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UndirectGraphAdjacencyMatrixSetter.m; path = DataStructure/algorithms/Graph/UndirectGraphAdjacencyMatrixSetter.m; sourceTree = "<group>"; };
+		494305A417DD9DD30004EBD8 /* GraphVertexSetterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphVertexSetterFactory.m; path = DataStructure/algorithms/Graph/GraphVertexSetterFactory.m; sourceTree = "<group>"; };
+		494305A517DD9DD30004EBD8 /* IGraphVertexSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGraphVertexSetter.h; path = DataStructure/algorithms/Graph/IGraphVertexSetter.h; sourceTree = "<group>"; };
+		494305A617DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UndirectGraphAdjacencyMatrixSetter.h; path = DataStructure/algorithms/Graph/UndirectGraphAdjacencyMatrixSetter.h; sourceTree = "<group>"; };
+		494305A917DD9F330004EBD8 /* GraphMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphMatrixView.h; path = DataStructure/algorithms/Graph/GraphMatrixView.h; sourceTree = "<group>"; };
+		494305AA17DD9F330004EBD8 /* GraphMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphMatrixView.m; path = DataStructure/algorithms/Graph/GraphMatrixView.m; sourceTree = "<group>"; };
+		494305AC17DDA2D20004EBD8 /* IllustrateUndirectGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IllustrateUndirectGraphView.h; path = DataStructure/algorithms/Graph/IllustrateUndirectGraphView.h; sourceTree = "<group>"; };
+		494305AD17DDA2D30004EBD8 /* IllustrateUndirectGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustrateUndirectGraphView.m; path = DataStructure/algorithms/Graph/IllustrateUndirectGraphView.m; sourceTree = "<group>"; };
+		494305AF17DDA9200004EBD8 /* GraphAnimatonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphAnimatonView.h; path = DataStructure/algorithms/Graph/GraphAnimatonView.h; sourceTree = "<group>"; };
+		494305B017DDA9200004EBD8 /* GraphAnimatonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphAnimatonView.m; path = DataStructure/algorithms/Graph/GraphAnimatonView.m; sourceTree = "<group>"; };
+		495B44A217D71B2400F88D39 /* menudata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menudata.plist; sourceTree = "<group>"; };
+		4974A56B17D1799B00A8D750 /* BasicSortAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicSortAnimationView.h; path = DataStructure/algorithms/Sorts/BasicSortAnimationView.h; sourceTree = "<group>"; };
+		4974A56C17D1799B00A8D750 /* BasicSortAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicSortAnimationView.m; path = DataStructure/algorithms/Sorts/BasicSortAnimationView.m; sourceTree = "<group>"; };
+		49D3143F17CEF56900993FA4 /* IAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IAnimationView.h; path = DataStructure/IAnimationView.h; sourceTree = "<group>"; };
+		49D3144017D08B2E00993FA4 /* AlgorithmLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmLogView.h; sourceTree = "<group>"; };
+		49D3144117D08B2E00993FA4 /* AlgorithmLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmLogView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49320A2917C35CA600E96911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49320A5A17C3B81900E96911 /* QuartzCore.framework in Frameworks */,
+				49320A3017C35CA600E96911 /* UIKit.framework in Frameworks */,
+				49320A3217C35CA600E96911 /* Foundation.framework in Frameworks */,
+				49320A3417C35CA600E96911 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		491CE5B317C469AD000C644E /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				491CE5B417C46A20000C644E /* CodeAnimation.h */,
+				491CE5B517C46A20000C644E /* CodeAnimation.m */,
+				491CE5B717C48503000C644E /* DataAnimation.h */,
+				491CE5B817C48503000C644E /* DataAnimation.m */,
+				491CE5C317C5AE09000C644E /* BasicAlgorithmView.h */,
+				491CE5C417C5AE09000C644E /* BasicAlgorithmView.m */,
+				49D3143F17CEF56900993FA4 /* IAnimationView.h */,
+				4912EC4C17D574D500A5131B /* MenuItem.h */,
+				4912EC4D17D574D500A5131B /* MenuItem.m */,
+				4912EC5217D58A0500A5131B /* MenuButton.h */,
+				4912EC5317D58A0600A5131B /* MenuButton.m */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		491CE5C817C8E280000C644E /* Sorts */ = {
+			isa = PBXGroup;
+			children = (
+				491CE5C917C8E518000C644E /* InsertionSort.h */,
+				491CE5CA17C8E518000C644E /* InsertionSort.m */,
+				491CE5CC17C8EC5D000C644E /* InsertionSortAnimationView.h */,
+				491CE5CD17C8EC5D000C644E /* InsertionSortAnimationView.m */,
+				4974A56B17D1799B00A8D750 /* BasicSortAnimationView.h */,
+				4974A56C17D1799B00A8D750 /* BasicSortAnimationView.m */,
+				4912EC4617D47F4F00A5131B /* QuickSortView.h */,
+				4912EC4717D47F4F00A5131B /* QuickSortView.m */,
+				4912EC4917D47F6000A5131B /* QuickSortAnimationView.h */,
+				4912EC4A17D47F6100A5131B /* QuickSortAnimationView.m */,
+			);
+			name = Sorts;
+			sourceTree = "<group>";
+		};
+		49320A2317C35CA600E96911 = {
+			isa = PBXGroup;
+			children = (
+				491CE5B317C469AD000C644E /* Infrastructure */,
+				49320A5217C3A2E900E96911 /* Algorithms */,
+				49320A3517C35CA600E96911 /* DataStructure */,
+				49320A2E17C35CA600E96911 /* Frameworks */,
+				49320A2D17C35CA600E96911 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49320A2D17C35CA600E96911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49320A2C17C35CA600E96911 /* DataStructure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49320A2E17C35CA600E96911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49320A5917C3B81900E96911 /* QuartzCore.framework */,
+				49320A2F17C35CA600E96911 /* UIKit.framework */,
+				49320A3117C35CA600E96911 /* Foundation.framework */,
+				49320A3317C35CA600E96911 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49320A3517C35CA600E96911 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				49320A3E17C35CA600E96911 /* AppDelegate.h */,
+				49320A3F17C35CA600E96911 /* AppDelegate.m */,
+				49320A4717C35CA600E96911 /* ViewController.h */,
+				49320A4817C35CA600E96911 /* ViewController.m */,
+				49320A4A17C35CA600E96911 /* ViewController.xib */,
+				49D3144017D08B2E00993FA4 /* AlgorithmLogView.h */,
+				49D3144117D08B2E00993FA4 /* AlgorithmLogView.m */,
+				49320A3617C35CA600E96911 /* Supporting Files */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		49320A3617C35CA600E96911 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49320A3717C35CA600E96911 /* DataStructure-Info.plist */,
+				49320A3817C35CA600E96911 /* InfoPlist.strings */,
+				49320A3B17C35CA600E96911 /* main.m */,
+				49320A3D17C35CA600E96911 /* DataStructure-Prefix.pch */,
+				49320A4117C35CA600E96911 /* Default.png */,
+				49320A4317C35CA600E96911 /* Default@2x.png */,
+				49320A4517C35CA600E96911 /* Default-568h@2x.png */,
+				495B44A217D71B2400F88D39 /* menudata.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49320A5217C3A2E900E96911 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				494305A017DD9AFA0004EBD8 /* Graph */,
+				491CE5C817C8E280000C644E /* Sorts */,
+				49320A5317C3A2F400E96911 /* Demo */,
+			);
+			name = Algorithms;
+			sourceTree = "<group>";
+		};
+		49320A5317C3A2F400E96911 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				49320A5617C3A97500E96911 /* Hanoi.h */,
+				49320A5717C3A97500E96911 /* Hanoi.m */,
+				491CE5BA17C48F9F000C644E /* HanoiAnimationView.h */,
+				491CE5BB17C48F9F000C644E /* HanoiAnimationView.m */,
+				491CE5BD17C4A8AC000C644E /* BubbleSortView.h */,
+				491CE5BE17C4A8AC000C644E /* BubbleSortView.m */,
+				491CE5C017C4B055000C644E /* BubbleSortAnimationView.h */,
+				491CE5C117C4B055000C644E /* BubbleSortAnimationView.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		494305A017DD9AFA0004EBD8 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				494305A117DD9C490004EBD8 /* GraphVertexSetters */,
+				494305A917DD9F330004EBD8 /* GraphMatrixView.h */,
+				494305AA17DD9F330004EBD8 /* GraphMatrixView.m */,
+				494305AC17DDA2D20004EBD8 /* IllustrateUndirectGraphView.h */,
+				494305AD17DDA2D30004EBD8 /* IllustrateUndirectGraphView.m */,
+				494305AF17DDA9200004EBD8 /* GraphAnimatonView.h */,
+				494305B017DDA9200004EBD8 /* GraphAnimatonView.m */,
+				4925454817DEEC9800074359 /* GraphVertex.h */,
+				4925454917DEEC9800074359 /* GraphVertex.m */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		494305A117DD9C490004EBD8 /* GraphVertexSetters */ = {
+			isa = PBXGroup;
+			children = (
+				494305A217DD9DD30004EBD8 /* GraphVertexSetterFactory.h */,
+				494305A317DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m */,
+				494305A417DD9DD30004EBD8 /* GraphVertexSetterFactory.m */,
+				494305A517DD9DD30004EBD8 /* IGraphVertexSetter.h */,
+				494305A617DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.h */,
+			);
+			name = GraphVertexSetters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49320A2B17C35CA600E96911 /* DataStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49320A4F17C35CA600E96911 /* Build configuration list for PBXNativeTarget "DataStructure" */;
+			buildPhases = (
+				49320A2817C35CA600E96911 /* Sources */,
+				49320A2917C35CA600E96911 /* Frameworks */,
+				49320A2A17C35CA600E96911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataStructure;
+			productName = DataStructure;
+			productReference = 49320A2C17C35CA600E96911 /* DataStructure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49320A2417C35CA600E96911 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Andrew;
+			};
+			buildConfigurationList = 49320A2717C35CA600E96911 /* Build configuration list for PBXProject "DataStructure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49320A2317C35CA600E96911;
+			productRefGroup = 49320A2D17C35CA600E96911 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49320A2B17C35CA600E96911 /* DataStructure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49320A2A17C35CA600E96911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49320A3A17C35CA600E96911 /* InfoPlist.strings in Resources */,
+				49320A4217C35CA600E96911 /* Default.png in Resources */,
+				49320A4417C35CA600E96911 /* Default@2x.png in Resources */,
+				49320A4617C35CA600E96911 /* Default-568h@2x.png in Resources */,
+				49320A4C17C35CA600E96911 /* ViewController.xib in Resources */,
+				495B44A317D71B2400F88D39 /* menudata.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49320A2817C35CA600E96911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49320A3C17C35CA600E96911 /* main.m in Sources */,
+				49320A4017C35CA600E96911 /* AppDelegate.m in Sources */,
+				49320A4917C35CA600E96911 /* ViewController.m in Sources */,
+				49320A5817C3A97500E96911 /* Hanoi.m in Sources */,
+				491CE5B617C46A20000C644E /* CodeAnimation.m in Sources */,
+				491CE5B917C48503000C644E /* DataAnimation.m in Sources */,
+				491CE5BC17C48F9F000C644E /* HanoiAnimationView.m in Sources */,
+				491CE5BF17C4A8AD000C644E /* BubbleSortView.m in Sources */,
+				491CE5C217C4B055000C644E /* BubbleSortAnimationView.m in Sources */,
+				491CE5C517C5AE09000C644E /* BasicAlgorithmView.m in Sources */,
+				491CE5CB17C8E518000C644E /* InsertionSort.m in Sources */,
+				491CE5CE17C8EC5D000C644E /* InsertionSortAnimationView.m in Sources */,
+				49D3144217D08B2E00993FA4 /* AlgorithmLogView.m in Sources */,
+				4974A56D17D1799B00A8D750 /* BasicSortAnimationView.m in Sources */,
+				4912EC4817D47F5000A5131B /* QuickSortView.m in Sources */,
+				4912EC4B17D47F6100A5131B /* QuickSortAnimationView.m in Sources */,
+				4912EC4E17D574D500A5131B /* MenuItem.m in Sources */,
+				4912EC5417D58A0600A5131B /* MenuButton.m in Sources */,
+				494305A717DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m in Sources */,
+				494305A817DD9DD30004EBD8 /* GraphVertexSetterFactory.m in Sources */,
+				494305AB17DD9F330004EBD8 /* GraphMatrixView.m in Sources */,
+				494305AE17DDA2D30004EBD8 /* IllustrateUndirectGraphView.m in Sources */,
+				494305B117DDA9200004EBD8 /* GraphAnimatonView.m in Sources */,
+				4925454A17DEEC9800074359 /* GraphVertex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49320A3817C35CA600E96911 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49320A3917C35CA600E96911 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		49320A4A17C35CA600E96911 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49320A4B17C35CA600E96911 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49320A4D17C35CA600E96911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		49320A4E17C35CA600E96911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49320A5017C35CA600E96911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataStructure/DataStructure-Prefix.pch";
+				INFOPLIST_FILE = "DataStructure/DataStructure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49320A5117C35CA600E96911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataStructure/DataStructure-Prefix.pch";
+				INFOPLIST_FILE = "DataStructure/DataStructure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49320A2717C35CA600E96911 /* Build configuration list for PBXProject "DataStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49320A4D17C35CA600E96911 /* Debug */,
+				49320A4E17C35CA600E96911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49320A4F17C35CA600E96911 /* Build configuration list for PBXNativeTarget "DataStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49320A5017C35CA600E96911 /* Debug */,
+				49320A5117C35CA600E96911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49320A2417C35CA600E96911 /* Project object */;
+}
