@@ -17,4 +17,6 @@
 - (id)initWithFrame:(CGRect)frame andQuantity: (int)quantity;
 - (void) drawGraph: (int) quantity withData: (NSMutableArray *) boxes;
 
+- (void) drawArrowHead: (CGContextRef) context startPoint: (CGPoint) startPoint endPoint:(CGPoint) endPoint;
+
 @end

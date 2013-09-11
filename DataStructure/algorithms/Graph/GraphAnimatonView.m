@@ -36,7 +36,7 @@
         txtBoxesQuantity.enabled = YES;
         txtBoxesQuantity.placeholder = @"Length of The Matrix";
         txtBoxesQuantity.borderStyle = UITextBorderStyleRoundedRect;
-        txtBoxesQuantity.keyboardType = UIKeyboardTypeDecimalPad;
+        txtBoxesQuantity.keyboardType = UIKeyboardTypeNumberPad;
         
         [txtBoxesQuantity setFrame:CGRectMake(0, 5, 150, 40)];
         [self addSubview:txtBoxesQuantity];
@@ -103,6 +103,8 @@
     }
     
     [matrixView drawMatrix: quantity];
+    
+    [txtBoxesQuantity resignFirstResponder];
 }
 
 /*

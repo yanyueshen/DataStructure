@@ -8,6 +8,7 @@
 
 #import "GraphMatrixView.h"
 #import "GraphVertexSetterFactory.h"
+#import "ArrowView.h"
 
 @implementation GraphMatrixView
 
@@ -19,7 +20,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-      
+//        ArrowView *arrow = [[ArrowView alloc] initWithAngle:100 andPosition:CGPointMake(100, 100)];
+//        [self addSubview:arrow];
     }
     return self;
 }
