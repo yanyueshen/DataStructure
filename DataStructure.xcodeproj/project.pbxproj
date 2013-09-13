@@ -34,6 +34,11 @@
 		49320A4C17C35CA600E96911 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49320A4A17C35CA600E96911 /* ViewController.xib */; };
 		49320A5817C3A97500E96911 /* Hanoi.m in Sources */ = {isa = PBXBuildFile; fileRef = 49320A5717C3A97500E96911 /* Hanoi.m */; };
 		49320A5A17C3B81900E96911 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A5917C3B81900E96911 /* QuartzCore.framework */; };
+		4933CBBB17E154B400123886 /* IllustrateDirectGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4933CBBA17E154B400123886 /* IllustrateDirectGraphView.m */; };
+		4933CBBE17E1553500123886 /* BaseIllustrateGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4933CBBD17E1553500123886 /* BaseIllustrateGraphView.m */; };
+		4933CBC117E16A2100123886 /* GraphDeepFirstSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4933CBC017E16A2100123886 /* GraphDeepFirstSearch.m */; };
+		4933CBC517E19D2E00123886 /* UndirectGraphDeepFirstAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4933CBC417E19D2E00123886 /* UndirectGraphDeepFirstAnimationView.m */; };
+		4933CBC817E1A28F00123886 /* DirectedGraphDeepFirstAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4933CBC717E1A28F00123886 /* DirectedGraphDeepFirstAnimationView.m */; };
 		494305A717DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305A317DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m */; };
 		494305A817DD9DD30004EBD8 /* GraphVertexSetterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305A417DD9DD30004EBD8 /* GraphVertexSetterFactory.m */; };
 		494305AB17DD9F330004EBD8 /* GraphMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494305AA17DD9F330004EBD8 /* GraphMatrixView.m */; };
@@ -92,6 +97,17 @@
 		49320A5617C3A97500E96911 /* Hanoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hanoi.h; path = DataStructure/algorithms/Demo/Hanoi.h; sourceTree = "<group>"; };
 		49320A5717C3A97500E96911 /* Hanoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hanoi.m; path = DataStructure/algorithms/Demo/Hanoi.m; sourceTree = "<group>"; };
 		49320A5917C3B81900E96911 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4933CBB917E154B400123886 /* IllustrateDirectGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IllustrateDirectGraphView.h; path = DataStructure/algorithms/Graph/IllustrateDirectGraphView.h; sourceTree = "<group>"; };
+		4933CBBA17E154B400123886 /* IllustrateDirectGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustrateDirectGraphView.m; path = DataStructure/algorithms/Graph/IllustrateDirectGraphView.m; sourceTree = "<group>"; };
+		4933CBBC17E1553500123886 /* BaseIllustrateGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseIllustrateGraphView.h; path = DataStructure/algorithms/Graph/BaseIllustrateGraphView.h; sourceTree = "<group>"; };
+		4933CBBD17E1553500123886 /* BaseIllustrateGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseIllustrateGraphView.m; path = DataStructure/algorithms/Graph/BaseIllustrateGraphView.m; sourceTree = "<group>"; };
+		4933CBBF17E16A2100123886 /* GraphDeepFirstSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphDeepFirstSearch.h; path = DataStructure/algorithms/Graph/GraphDeepFirstSearch.h; sourceTree = "<group>"; };
+		4933CBC017E16A2100123886 /* GraphDeepFirstSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphDeepFirstSearch.m; path = DataStructure/algorithms/Graph/GraphDeepFirstSearch.m; sourceTree = "<group>"; };
+		4933CBC217E1933800123886 /* IIllustrateGraphAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IIllustrateGraphAnimationView.h; path = DataStructure/algorithms/Graph/IIllustrateGraphAnimationView.h; sourceTree = "<group>"; };
+		4933CBC317E19D2D00123886 /* UndirectGraphDeepFirstAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UndirectGraphDeepFirstAnimationView.h; path = DataStructure/algorithms/UndirectGraphDeepFirstAnimationView.h; sourceTree = "<group>"; };
+		4933CBC417E19D2E00123886 /* UndirectGraphDeepFirstAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UndirectGraphDeepFirstAnimationView.m; path = DataStructure/algorithms/UndirectGraphDeepFirstAnimationView.m; sourceTree = "<group>"; };
+		4933CBC617E1A28E00123886 /* DirectedGraphDeepFirstAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectedGraphDeepFirstAnimationView.h; path = DataStructure/algorithms/Graph/DirectedGraphDeepFirstAnimationView.h; sourceTree = "<group>"; };
+		4933CBC717E1A28F00123886 /* DirectedGraphDeepFirstAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DirectedGraphDeepFirstAnimationView.m; path = DataStructure/algorithms/Graph/DirectedGraphDeepFirstAnimationView.m; sourceTree = "<group>"; };
 		494305A217DD9DD30004EBD8 /* GraphVertexSetterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphVertexSetterFactory.h; path = DataStructure/algorithms/Graph/GraphVertexSetterFactory.h; sourceTree = "<group>"; };
 		494305A317DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UndirectGraphAdjacencyMatrixSetter.m; path = DataStructure/algorithms/Graph/UndirectGraphAdjacencyMatrixSetter.m; sourceTree = "<group>"; };
 		494305A417DD9DD30004EBD8 /* GraphVertexSetterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphVertexSetterFactory.m; path = DataStructure/algorithms/Graph/GraphVertexSetterFactory.m; sourceTree = "<group>"; };
@@ -254,12 +270,23 @@
 				494305A117DD9C490004EBD8 /* GraphVertexSetters */,
 				494305A917DD9F330004EBD8 /* GraphMatrixView.h */,
 				494305AA17DD9F330004EBD8 /* GraphMatrixView.m */,
+				4933CBBC17E1553500123886 /* BaseIllustrateGraphView.h */,
+				4933CBBD17E1553500123886 /* BaseIllustrateGraphView.m */,
+				4933CBB917E154B400123886 /* IllustrateDirectGraphView.h */,
+				4933CBBA17E154B400123886 /* IllustrateDirectGraphView.m */,
 				494305AC17DDA2D20004EBD8 /* IllustrateUndirectGraphView.h */,
 				494305AD17DDA2D30004EBD8 /* IllustrateUndirectGraphView.m */,
 				494305AF17DDA9200004EBD8 /* GraphAnimatonView.h */,
 				494305B017DDA9200004EBD8 /* GraphAnimatonView.m */,
 				4925454817DEEC9800074359 /* GraphVertex.h */,
 				4925454917DEEC9800074359 /* GraphVertex.m */,
+				4933CBBF17E16A2100123886 /* GraphDeepFirstSearch.h */,
+				4933CBC017E16A2100123886 /* GraphDeepFirstSearch.m */,
+				4933CBC217E1933800123886 /* IIllustrateGraphAnimationView.h */,
+				4933CBC317E19D2D00123886 /* UndirectGraphDeepFirstAnimationView.h */,
+				4933CBC417E19D2E00123886 /* UndirectGraphDeepFirstAnimationView.m */,
+				4933CBC617E1A28E00123886 /* DirectedGraphDeepFirstAnimationView.h */,
+				4933CBC717E1A28F00123886 /* DirectedGraphDeepFirstAnimationView.m */,
 			);
 			name = Graph;
 			sourceTree = "<group>";
@@ -368,6 +395,11 @@
 				494305B117DDA9200004EBD8 /* GraphAnimatonView.m in Sources */,
 				4925454A17DEEC9800074359 /* GraphVertex.m in Sources */,
 				4920552017DF59D300446F8D /* ArrowView.m in Sources */,
+				4933CBBB17E154B400123886 /* IllustrateDirectGraphView.m in Sources */,
+				4933CBBE17E1553500123886 /* BaseIllustrateGraphView.m in Sources */,
+				4933CBC117E16A2100123886 /* GraphDeepFirstSearch.m in Sources */,
+				4933CBC517E19D2E00123886 /* UndirectGraphDeepFirstAnimationView.m in Sources */,
+				4933CBC817E1A28F00123886 /* DirectedGraphDeepFirstAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

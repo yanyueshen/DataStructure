@@ -8,20 +8,29 @@
 
 #import <UIKit/UIKit.h>
 #import "IAnimationView.h"
+#import "IIllustrateGraphAnimationView.h"
+
 
 @class GraphMatrixView;
 @class IllustrateUndirectGraphView;
+@class BaseIllustrateGraphView;
 
-@interface GraphAnimatonView : UIView <IAnimationView>
+@interface GraphAnimatonView : UIView <IAnimationView> {
+    @public
+    UIView *animationViewsContainer;
+    BaseIllustrateGraphView *illustrateView;
+}
 
 @property (nonatomic) GraphMatrixView *matrixView;
-@property (nonatomic) IllustrateUndirectGraphView *illustrateView;
+@property (nonatomic) BaseIllustrateGraphView *illustrateView;
 @property (nonatomic) UITextField *txtBoxesQuantity;
 @property (nonatomic) UIButton *btnGenerateMatrix;
 @property (nonatomic) UIButton *btnGenerateGraph;
 @property (nonatomic) UIView *animationViewsContainer;
 
+- (id) initWithFrame:(CGRect)frame dataLength: (NSInteger) length;
 - (void) generateMatrix: (id)sender;
 - (void) generateGraph: (id)sender;
+- (void) initializeAnimationView;
 
 @end

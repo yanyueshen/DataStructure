@@ -124,7 +124,7 @@ for(int i = 0;i <= 4; i++) {
     
     demo.Children = [NSArray arrayWithObjects:hanoi, bubble, nil];
     
-    // Sort Menus
+    //////////////////////////////   Sort Menus ///////////////////////////////////////
     MenuItem *sort = [MenuItem new];
     sort.AlgorithmClassName = @"Sort";
     sort.AlgorithmClassName = @"1";
@@ -146,7 +146,19 @@ for(int i = 0;i <= 4; i++) {
     
     sort.Children = [NSArray arrayWithObjects:bubbleSort, insertion, quick, nil];
     
-    menus = [NSArray arrayWithObjects:demo, sort, nil];
+    //////////////////////////////   Graph Menus ///////////////////////////////////////
+    MenuItem *graph = [MenuItem new];
+    graph.AlgorithmClassName  = @"graph";
+    graph.AlgorithmClassName  = @"2";
+    
+    MenuItem *undirectDeepFirst = [MenuItem new];
+    undirectDeepFirst.DisplayName = @"Deep first (Undirected)";
+    undirectDeepFirst.AlgorithmClassName = @"GraphDeepFirstSearch";
+    undirectDeepFirst.IllustrateAnimationClassName = @"UndirectGraphDeepFirstAnimationView";
+    
+    graph.Children = [NSArray arrayWithObjects:undirectDeepFirst, nil];
+    
+    menus = [NSArray arrayWithObjects:demo, sort, graph, nil];
     
     float top = 12;
     float height = 64;
@@ -273,10 +285,10 @@ for(int i = 0;i <= 4; i++) {
     id animationView = [[NSClassFromString(menu.IllustrateAnimationClassName) alloc] initWithFrame:CGRectMake(0, 0, _animationSectionLayout.frame.size.width, _animationSectionLayout.frame.size.height) dataLength:5];
     id codeView = [[NSClassFromString(menu.AlgorithmClassName) alloc] initWithFrame:CGRectMake(0, 0, _leftCodeLayout.frame.size.width, _leftCodeLayout.frame.size.height) animationView:animationView];
     [_leftCodeLayout addSubview:codeView];
-   // [_animationSectionLayout addSubview:animationView];
+    [_animationSectionLayout addSubview:animationView];
     
-    GraphAnimatonView *graph = [[GraphAnimatonView alloc] initWithFrame:CGRectMake(0, 0, _animationSectionLayout.frame.size.width, _animationSectionLayout.frame.size.height)];
-    [_animationSectionLayout addSubview:graph];
+//    GraphAnimatonView *graph = [[GraphAnimatonView alloc] initWithFrame:CGRectMake(0, 0, _animationSectionLayout.frame.size.width, _animationSectionLayout.frame.size.height)];
+//    [_animationSectionLayout addSubview:graph];
     
     [self displayAlgorithmTableViewAs:Hide];
 }

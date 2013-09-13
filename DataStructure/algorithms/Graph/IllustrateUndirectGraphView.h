@@ -7,16 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseIllustrateGraphView.h"
 
-@interface IllustrateUndirectGraphView : UIView
+@interface IllustrateUndirectGraphView : BaseIllustrateGraphView
 
-@property (nonatomic) int boxesQuantity;
-@property (nonatomic) NSMutableArray *boxesArray;
-@property (nonatomic) NSMutableArray *dataBoxes;
 
-- (id)initWithFrame:(CGRect)frame andQuantity: (int)quantity;
-- (void) drawGraph: (int) quantity withData: (NSMutableArray *) boxes;
 
-- (void) drawArrowHead: (CGContextRef) context startPoint: (CGPoint) startPoint endPoint:(CGPoint) endPoint;
+
 
 @end

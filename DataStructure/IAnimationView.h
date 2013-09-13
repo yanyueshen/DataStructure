@@ -22,4 +22,9 @@
 - (void) stopAnimation;
 - (void) log: (NSString *)logText;
 
+// The following methods are for Graph
+@optional
+- (NSMutableArray *) getGraphNodes;
+- (NSMutableArray *) getGraphMatrix;
+
 @end

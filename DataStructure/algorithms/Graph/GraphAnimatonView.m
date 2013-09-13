@@ -9,6 +9,9 @@
 #import "GraphAnimatonView.h"
 #import "IllustrateUndirectGraphView.h"
 #import "GraphMatrixView.h"
+#import "BaseIllustrateGraphView.h"
+#import <QuartzCore/QuartzCore.h>
+#import "GraphDeepFirstSearch.h"
 
 @implementation GraphAnimatonView
 
@@ -25,7 +28,7 @@
 @synthesize btnGenerateMatrix;
 @synthesize animationViewsContainer;
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame dataLength: (NSInteger) length
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -60,10 +63,7 @@
         animationViewsContainer = [[UIView alloc] initWithFrame:CGRectMake(10, 50, (super.frame.size.width - 20), (super.frame.size.height - 50))];
         
         // Initialize the illustrated graph view
-        illustrateView = [IllustrateUndirectGraphView new];
-        [illustrateView setFrame:animationViewsContainer.frame];
-        [illustrateView setBackgroundColor:[UIColor whiteColor]];
-        [animationViewsContainer addSubview:illustrateView];
+        [self initializeAnimationView];
         
         // Initialize the matrix view
         matrixView = [GraphMatrixView new];
@@ -107,16 +107,41 @@
     [txtBoxesQuantity resignFirstResponder];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 - (void) startAnimation {
+    [UIView animateWithDuration:0.5 animations:^{
+        UILabel *lbl = illustrateView.boxesArray[fromIndex];
+        [lbl setBackgroundColor:[UIColor blueColor]];
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.5f animations:^{
+            UILabel *lbl = illustrateView.boxesArray[fromIndex];
+            [lbl setBackgroundColor:[UIColor whiteColor]];
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.5f animations:^{
+                UILabel *lbl = illustrateView.boxesArray[fromIndex];
+                [lbl setBackgroundColor:[UIColor blueColor]];
+            } completion:^(BOOL finished) {
+                [[GraphDeepFirstSearch SharedCodeView] moveToNextStep];
+            }];
+        }];
+    }];
+    
+    
+    
+//    UIButton *btn = illustrateView.boxesArray[fromIndex];//illustrateView.dataBoxes[fromIndex];
+//    
+//    CABasicAnimation *animation  = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
+//    
+//    animation.fromValue = (id)[UIColor clearColor].CGColor;
+//    animation.toValue = (id)[UIColor blueColor].CGColor;
+//    animation.duration = 0.5f;
+//    animation.autoreverses = NO;
+//    animation.fillMode = kCAFillModeForwards;
+//    animation.removedOnCompletion = NO;
+//    animation.delegate = self;
+//    
+//
+//    [btn.imageView.layer addAnimation:animation forKey:@"aa"];
     
 }
 
@@ -128,4 +153,31 @@
     
 }
 
+- (void) animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    [[GraphDeepFirstSearch SharedCodeView] moveToNextStep];
+}
+
+- (NSMutableArray *) getGraphNodes {
+    NSMutableArray __weak *res = [NSMutableArray array];
+    for (int i = 0; i < matrixView.boxesQuantity; i++) {
+        [res addObject:[NSNumber numberWithInt:i]];
+    }
+    
+    return res;
+}
+
+- (NSMutableArray *) getGraphMatrix {
+    NSMutableArray __weak *res = [NSMutableArray array];
+    
+    for (int i = 0; i < matrixView.boxesQuantity; i++) {
+        NSMutableArray *row = [NSMutableArray array];
+        for (int j = 0; j < matrixView.boxesQuantity; j++) {
+            UIButton *btn = matrixView.boxesArray[i][j];
+            [row addObject:[NSNumber numberWithInt:btn.titleLabel.text.intValue]];
+        }
+        [res addObject:row];
+    }
+    
+    return res;
+}
 @end
