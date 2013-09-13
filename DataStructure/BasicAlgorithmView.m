@@ -88,13 +88,13 @@
     
     NSLog(@"Insertion Sort view layer.x: %f", self.layer.frame.origin.x);
     
-    CATextLayer *lastLayer = [self.codeLayers objectAtIndex:[self.codeLayers count] - 1];
-    CGRect rect = CGRectMake(10, lastLayer.frame.origin.y + 50, 100, 40);
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button addTarget:self action:@selector(runCode:) forControlEvents:UIControlEventTouchDown];
-    [button setTitle:@"Run" forState:UIControlStateNormal];
-    [button setFrame:rect];
-    [self addSubview:button];
+//    CATextLayer *lastLayer = [self.codeLayers objectAtIndex:[self.codeLayers count] - 1];
+//    CGRect rect = CGRectMake(10, lastLayer.frame.origin.y + 50, 100, 40);
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    [button addTarget:self action:@selector(runCode:) forControlEvents:UIControlEventTouchDown];
+//    [button setTitle:@"Run" forState:UIControlStateNormal];
+//    [button setFrame:rect];
+//    [self addSubview:button];
     
     self.codeAnimationArray = [[NSMutableArray alloc] init];
     [self aligorithm];
