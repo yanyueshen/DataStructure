@@ -65,7 +65,7 @@
 - (void) initializeCodeData {
     // Initialize the code array.
     CGFloat height = 20.0f;
-    CGFloat top = 100.0f;
+    CGFloat top = 20.0f;
     CGFloat width = [self frame].size.width - 10;
     
     self.codeLayers = [[NSMutableArray alloc] init];
@@ -150,6 +150,7 @@
     isAnimationBack = NO;
     CodeAnimation *codeAnimation = [codeAnimationArray objectAtIndex:currentLineNumber];
     currentAnimationIndex = codeAnimation.lineNumber;
+    NSLog(@"current line number is: %d", codeAnimation.lineNumber);
     
     CATextLayer *layer = [codeLayers objectAtIndex:self.currentAnimationIndex];
     selectionAnimation = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
