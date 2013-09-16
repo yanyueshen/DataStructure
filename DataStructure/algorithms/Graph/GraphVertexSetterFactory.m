@@ -9,18 +9,20 @@
 #import "GraphVertexSetterFactory.h"
 #import "IGraphVertexSetter.h"
 #import "UndirectGraphAdjacencyMatrixSetter.h"
-
+#import "UndirectedWithWeightGraphAdjacencyMatrixSetter.h"
 
 @implementation GraphVertexSetterFactory
 
 + (id<IGraphVertexSetter>) generateGraphVertexSetter:(GraphVertexSetterType)setterType {
-    id res;
+    id res = nil;
     
     switch (setterType) {
-        case UndirectGraphAdjacencyMatrix:
+        case UndirectedGraphAdjacencyMatrix:
             res = [UndirectGraphAdjacencyMatrixSetter new];
             break;
-            
+        case UndirectedWithWeightGraphAdjacencyMatrix:
+            res = [UndirectedWithWeightGraphAdjacencyMatrixSetter new];
+            break;
         default:
             break;
     }

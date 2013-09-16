@@ -7,6 +7,7 @@
 //
 
 #import "GraphAnimatonView.h"
+#import "IGraphVertexSetter.h"
 
 @interface DirectedGraphDeepFirstAnimationView : GraphAnimatonView
 

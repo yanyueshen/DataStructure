@@ -12,6 +12,6 @@
 
 @protocol IGraphVertexSetter
 
-- (void) setItemWithValue:(NSString *)value atX:(int)x atY:(int)y inArray:(NSMutableArray *)boxexArray;
+- (void) setItemWithValue:(UIButton *)button inArray:(NSMutableArray *)boxesArray;
 
 @end

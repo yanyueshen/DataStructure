@@ -8,12 +8,14 @@
 
 #import "DirectedGraphDeepFirstAnimationView.h"
 #import "IllustrateDirectGraphView.h"
+#import "GraphMatrixView.h"
+#import "GraphVertexSetterFactory.h"
 
 @implementation DirectedGraphDeepFirstAnimationView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame dataLength:(NSInteger)length
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame dataLength:length];
     if (self) {
         // Initialization code
     }
@@ -26,6 +28,13 @@
     [illustrateView setBackgroundColor:[UIColor whiteColor]];
     [animationViewsContainer addSubview:illustrateView];
     
+}
+
+- (void) initializeGraphMatrixView {
+    id<IGraphVertexSetter> setter = [GraphVertexSetterFactory generateGraphVertexSetter:UndirectedWithWeightGraphAdjacencyMatrix];
+    matrixView = [[GraphMatrixView alloc] initWithFrame:animationViewsContainer.frame andSetter:setter];
+    [matrixView setBackgroundColor:[UIColor whiteColor]];
+    [animationViewsContainer addSubview:matrixView];
 }
 
 @end

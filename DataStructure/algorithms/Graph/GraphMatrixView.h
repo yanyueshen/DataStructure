@@ -16,9 +16,12 @@
 
 @property (nonatomic) int boxesQuantity;
 @property (nonatomic) NSMutableArray *boxesArray;
+@property (nonatomic) id<IGraphVertexSetter> vertexSetter;
+
 //@property (nonatomic) GraphAnimatonView *parentView;
 //@property (nonatomic) 
 
+- (id) initWithFrame:(CGRect)frame andSetter: (id<IGraphVertexSetter>) setter;
 - (void) drawMatrix: (int) quantity;
 
 @end

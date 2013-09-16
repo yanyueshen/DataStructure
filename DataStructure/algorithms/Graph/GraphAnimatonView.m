@@ -66,10 +66,11 @@
         [self initializeAnimationView];
         
         // Initialize the matrix view
-        matrixView = [GraphMatrixView new];
-        [matrixView setFrame:animationViewsContainer.frame];
-        [matrixView setBackgroundColor:[UIColor whiteColor]];
-        [animationViewsContainer addSubview:matrixView];
+        [self initializeGraphMatrixView];
+//        matrixView = [GraphMatrixView new];
+//        [matrixView setFrame:animationViewsContainer.frame];
+//        [matrixView setBackgroundColor:[UIColor whiteColor]];
+//        [animationViewsContainer addSubview:matrixView];
         
         [self addSubview:animationViewsContainer];
     }

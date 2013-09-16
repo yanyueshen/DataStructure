@@ -14,26 +14,19 @@
 
 @synthesize boxesQuantity;
 @synthesize boxesArray;
+@synthesize vertexSetter;
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame andSetter: (id<IGraphVertexSetter>) setter
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        vertexSetter = setter;
 //        ArrowView *arrow = [[ArrowView alloc] initWithAngle:100 andPosition:CGPointMake(100, 100)];
 //        [self addSubview:arrow];
     }
     return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 
 - (void) drawMatrix: (int) quantity {
@@ -69,29 +62,7 @@
 
 - (void) vertexChanged: (id)sender {
     UIButton *btn = (UIButton *)sender;
-    
-    int x = 0, y = 0;
-    for (; x < boxesQuantity; x++) {
-        NSMutableArray *array = boxesArray[x];
-        y = [array indexOfObject:btn];
-        if (y != NSNotFound) {
-            break;
-        }
-    }
-    
-    id<IGraphVertexSetter> vertexSetter = [GraphVertexSetterFactory generateGraphVertexSetter:UndirectGraphAdjacencyMatrix];
-    
-    if (x == y) {
-        // Can't assign data to the main diagonal
-        return;
-    }
-    
-    
-    if ([btn.titleLabel.text isEqualToString:@"1"]) {
-        [vertexSetter setItemWithValue:@"0" atX:x atY:y inArray:boxesArray];
-    } else {
-        [vertexSetter setItemWithValue:@"1" atX:x atY:y inArray:boxesArray];
-    }
+    [vertexSetter setItemWithValue:btn inArray:boxesArray];
 }
 
 @end

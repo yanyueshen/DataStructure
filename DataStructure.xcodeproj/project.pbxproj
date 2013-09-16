@@ -21,6 +21,8 @@
 		491CE5CE17C8EC5D000C644E /* InsertionSortAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CE5CD17C8EC5D000C644E /* InsertionSortAnimationView.m */; };
 		4920552017DF59D300446F8D /* ArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4920551F17DF59D300446F8D /* ArrowView.m */; };
 		4925454A17DEEC9800074359 /* GraphVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4925454917DEEC9800074359 /* GraphVertex.m */; };
+		4927DBCC17E69CCA0012039A /* DirectedGraphMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4927DBCB17E69CCA0012039A /* DirectedGraphMatrixView.m */; };
+		4927DBCF17E6AAE00012039A /* UndirectedWithWeightGraphAdjacencyMatrixSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4927DBCE17E6AAE00012039A /* UndirectedWithWeightGraphAdjacencyMatrixSetter.m */; };
 		49320A3017C35CA600E96911 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A2F17C35CA600E96911 /* UIKit.framework */; };
 		49320A3217C35CA600E96911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A3117C35CA600E96911 /* Foundation.framework */; };
 		49320A3417C35CA600E96911 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49320A3317C35CA600E96911 /* CoreGraphics.framework */; };
@@ -78,6 +80,10 @@
 		4920551F17DF59D300446F8D /* ArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrowView.m; path = DataStructure/ArrowView.m; sourceTree = "<group>"; };
 		4925454817DEEC9800074359 /* GraphVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphVertex.h; path = DataStructure/algorithms/Graph/GraphVertex.h; sourceTree = "<group>"; };
 		4925454917DEEC9800074359 /* GraphVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphVertex.m; path = DataStructure/algorithms/Graph/GraphVertex.m; sourceTree = "<group>"; };
+		4927DBCA17E69CCA0012039A /* DirectedGraphMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectedGraphMatrixView.h; path = DataStructure/algorithms/Graph/DirectedGraphMatrixView.h; sourceTree = "<group>"; };
+		4927DBCB17E69CCA0012039A /* DirectedGraphMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DirectedGraphMatrixView.m; path = DataStructure/algorithms/Graph/DirectedGraphMatrixView.m; sourceTree = "<group>"; };
+		4927DBCD17E6AAE00012039A /* UndirectedWithWeightGraphAdjacencyMatrixSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UndirectedWithWeightGraphAdjacencyMatrixSetter.h; path = DataStructure/algorithms/Graph/UndirectedWithWeightGraphAdjacencyMatrixSetter.h; sourceTree = "<group>"; };
+		4927DBCE17E6AAE00012039A /* UndirectedWithWeightGraphAdjacencyMatrixSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UndirectedWithWeightGraphAdjacencyMatrixSetter.m; path = DataStructure/algorithms/Graph/UndirectedWithWeightGraphAdjacencyMatrixSetter.m; sourceTree = "<group>"; };
 		49320A2C17C35CA600E96911 /* DataStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49320A2F17C35CA600E96911 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49320A3117C35CA600E96911 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -270,6 +276,8 @@
 				494305A117DD9C490004EBD8 /* GraphVertexSetters */,
 				494305A917DD9F330004EBD8 /* GraphMatrixView.h */,
 				494305AA17DD9F330004EBD8 /* GraphMatrixView.m */,
+				4927DBCA17E69CCA0012039A /* DirectedGraphMatrixView.h */,
+				4927DBCB17E69CCA0012039A /* DirectedGraphMatrixView.m */,
 				4933CBBC17E1553500123886 /* BaseIllustrateGraphView.h */,
 				4933CBBD17E1553500123886 /* BaseIllustrateGraphView.m */,
 				4933CBB917E154B400123886 /* IllustrateDirectGraphView.h */,
@@ -294,11 +302,13 @@
 		494305A117DD9C490004EBD8 /* GraphVertexSetters */ = {
 			isa = PBXGroup;
 			children = (
-				494305A217DD9DD30004EBD8 /* GraphVertexSetterFactory.h */,
-				494305A317DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m */,
-				494305A417DD9DD30004EBD8 /* GraphVertexSetterFactory.m */,
 				494305A517DD9DD30004EBD8 /* IGraphVertexSetter.h */,
+				494305A217DD9DD30004EBD8 /* GraphVertexSetterFactory.h */,
+				494305A417DD9DD30004EBD8 /* GraphVertexSetterFactory.m */,
 				494305A617DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.h */,
+				494305A317DD9DD30004EBD8 /* UndirectGraphAdjacencyMatrixSetter.m */,
+				4927DBCD17E6AAE00012039A /* UndirectedWithWeightGraphAdjacencyMatrixSetter.h */,
+				4927DBCE17E6AAE00012039A /* UndirectedWithWeightGraphAdjacencyMatrixSetter.m */,
 			);
 			name = GraphVertexSetters;
 			sourceTree = "<group>";
@@ -400,6 +410,8 @@
 				4933CBC117E16A2100123886 /* GraphDeepFirstSearch.m in Sources */,
 				4933CBC517E19D2E00123886 /* UndirectGraphDeepFirstAnimationView.m in Sources */,
 				4933CBC817E1A28F00123886 /* DirectedGraphDeepFirstAnimationView.m in Sources */,
+				4927DBCC17E69CCA0012039A /* DirectedGraphMatrixView.m in Sources */,
+				4927DBCF17E6AAE00012039A /* UndirectedWithWeightGraphAdjacencyMatrixSetter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

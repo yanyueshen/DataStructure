@@ -19,6 +19,7 @@
     @public
     UIView *animationViewsContainer;
     BaseIllustrateGraphView *illustrateView;
+    GraphMatrixView *matrixView;
 }
 
 @property (nonatomic) GraphMatrixView *matrixView;
@@ -32,5 +33,6 @@
 - (void) generateMatrix: (id)sender;
 - (void) generateGraph: (id)sender;
 - (void) initializeAnimationView;
+- (void) initializeGraphMatrixView;
 
 @end

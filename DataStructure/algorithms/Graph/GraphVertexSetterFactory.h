@@ -10,7 +10,8 @@
 #import "IGraphVertexSetter.h"
 
 typedef enum {
-    UndirectGraphAdjacencyMatrix
+    UndirectedGraphAdjacencyMatrix,
+    UndirectedWithWeightGraphAdjacencyMatrix
 } GraphVertexSetterType;
 
 

@@ -156,7 +156,12 @@ for(int i = 0;i <= 4; i++) {
     undirectDeepFirst.AlgorithmClassName = @"GraphDeepFirstSearch";
     undirectDeepFirst.IllustrateAnimationClassName = @"UndirectGraphDeepFirstAnimationView";
     
-    graph.Children = [NSArray arrayWithObjects:undirectDeepFirst, nil];
+    MenuItem *directDeepFirst = [MenuItem new];
+    directDeepFirst.DisplayName = @"Deep first (Directed)";
+    directDeepFirst.AlgorithmClassName = @"GraphDeepFirstSearch";
+    directDeepFirst.IllustrateAnimationClassName = @"DirectedGraphDeepFirstAnimationView";
+    
+    graph.Children = [NSArray arrayWithObjects:undirectDeepFirst, directDeepFirst, nil];
     
     menus = [NSArray arrayWithObjects:demo, sort, graph, nil];
     
